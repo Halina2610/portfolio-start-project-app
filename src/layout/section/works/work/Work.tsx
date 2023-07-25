@@ -21,8 +21,11 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  width: 100%;
-  max-width: 540px;
+  width: 30%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   background-color: #69f1f1;
 `
 const Image = styled.img`

@@ -1,39 +1,35 @@
 import React from 'react';
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import styled from "styled-components";
-import {Slider} from "./Slider";
+import {Slider2} from "./Slider2";
+import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Slider3} from "./Slider3";
 
 export const About = () => {
     return (
         <StyledAbout>
+            <FlexWrapper>
+
             <SectionTitle>About me</SectionTitle>
-            <Text>
-                According to the Bureau of Labor Statistics, the average person changes jobs 12.4
-                times between the ages of 18 and 54. That’s a lot!
-            </Text>
-            <Text>
-                I am a historian, mother of two children and I study programming
-                languages. Becoming a developer is my goal for the next year.
-                Oh yes, I am 30 years old and I believe that everything is possible!
-            </Text>
-            <SectionTitle>Work Experience</SectionTitle>
-            <Slider/>
-            <SectionTitle>Places of Study</SectionTitle>
-            <Slider/>
+
+                <Text>
+                    According to the Bureau of Labor Statistics, the average person changes jobs 12.4
+                    times between the ages of 18 and 54. That’s a lot!
+                </Text>
+                <Text>
+                    I am a historian, mother of two children and I study programming
+                    languages. Becoming a developer is my goal for the next year.
+                    Oh yes, I am 30 years old and I believe that everything is possible!
+                </Text>
+
+                <SectionTitle>Places of Study</SectionTitle>
+                <Slider2/>
+
+                <SectionTitle>Work Experience</SectionTitle>
+                <Slider3/>
+            </FlexWrapper>
 
 
-           {/* <Text>
-                Uhachi Regional Executive Committet, education department specialist, 2016 - 2022
-            </Text>
-            <Text>
-                IT-Incubator
-            </Text>
-            <TextMin> Courses of study, Front-end Developer (ReactJS), 02.2023 - present</TextMin>
-            <Text>Polack State University</Text>
-            <TextMin>
-                Historian, teacher of humanitarian disciplines, 2011 - 2017, Republic of Belarus
-            </TextMin>*/}
 
         </StyledAbout>
     );
@@ -44,8 +40,4 @@ const StyledAbout = styled.section`
 `
 const Text = styled.p`
   font-size: 2rem;
-`
-const TextMin = styled.p`
-  font-size: 1rem;
-
 `

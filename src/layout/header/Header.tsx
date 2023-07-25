@@ -3,7 +3,7 @@ import {Logo} from "../../components/logo/Logo";
 import styled from "styled-components";
 import {Menu} from "../../components/menu/Menu";
 
-const items = ["Home", "Skills", "Works", "Testumony", "Contact"]
+const items = ["Home", "About me", "Skills", "Works",  "Contact"]
 
 
 export const Header = () => {
@@ -16,10 +16,10 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background: #1f1f1f;
-  color: #f7f3ef;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 `
-
