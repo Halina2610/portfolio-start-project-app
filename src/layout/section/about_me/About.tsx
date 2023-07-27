@@ -35,7 +35,7 @@ export const About = () => {
     );
 };
 const StyledAbout = styled.section`
-  background-color: #d8e0f8;
+  background-color: #e8e8e8;
   min-height: 100vh;
 `
 const Text = styled.p`

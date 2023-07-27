@@ -8,24 +8,33 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle>My Tech Stack</SectionTitle>
-            <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"stretch"}>
-                <Skill iconId={"css"}/>
-                <Skill iconId={"react"}/>
-                <Skill iconId={"html"}/>
-                <Skill iconId={"git"}/>
-                <Skill iconId={"github"}/>
-                <Skill iconId={"styled components"}/>
-                <Skill iconId={"js"}/>
-                <Skill iconId={"typescript"}/>
+            <FlexWrapper wrap={"wrap"} justify={"space-around"} align={"stretch"}>
+                <Container>
+                    <Skill iconId={"css"}/>
+                    <Skill iconId={"react"}/>
+                    <Skill iconId={"html"}/>
+                    <Skill iconId={"git"}/>
+                    <Skill iconId={"github"}/>
+                    <Skill iconId={"styled components"}/>
+                    <Skill iconId={"js"}/>
+                    <Skill iconId={"typescript"}/>
+                    <Skill iconId={"vscode"}/>
+                </Container>
             </FlexWrapper>
         </StyledSkills>
     );
 };
 
 const StyledSkills = styled.section`
-  background-color: #9cffff;
+  background-color: #f3f3f3;
   min-height: 100vh;
-
 `
 
-
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+`;

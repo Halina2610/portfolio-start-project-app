@@ -2,13 +2,14 @@ import React from 'react';
 import photo from '../../../assets/img/avatar.png'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import FonImage from "../../../assets/img/fon-bg.webp"
 
 export const Main = () => {
     return (
         <StyledMain>
             <FlexWrapper align={"center"} justify={"space-around"}>
                 <div>
-                    <span>Hi There</span>
+                    <span>Hi,</span>
                     <Name>I am Halina Klyashtornaya</Name>
                     <MainTitle>A Web Developer.</MainTitle>
                 </div>
@@ -21,7 +22,7 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: aliceblue;
+  background: url(${FonImage});
 `
 
 const StyledPhoto = styled.img`

@@ -49,8 +49,8 @@ const Description = styled.p`
 const Pagination = styled.span`
   span {
 display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 3px;
     margin: 2px;
     background-color: blue;
   }
