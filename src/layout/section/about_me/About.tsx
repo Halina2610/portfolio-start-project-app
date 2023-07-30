@@ -27,6 +27,7 @@ export const About = () => {
 
                 <SectionTitle>Work Experience</SectionTitle>
                 <Slider3/>
+
             </FlexWrapper>
 
 
@@ -35,7 +36,6 @@ export const About = () => {
     );
 };
 const StyledAbout = styled.section`
-  background-color: #e8e8e8;
   min-height: 100vh;
 `
 const Text = styled.p`

@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {Theme} from "./Theme";
 
 export const GlobalStyles = createGlobalStyle`
  *,
@@ -14,6 +15,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Poppins", "Nunito Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: ${Theme.colors.textColor};
+    line-height: 1.2;
   }
   
   a {
@@ -26,5 +29,8 @@ export const GlobalStyles = createGlobalStyle`
     border: none;
   }
 
+  section:nth-of-type(even) {
+    background-color: ${Theme.colors.primaryBg};
+  }
 
 `

@@ -2,13 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/button/Button";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
-            <SectionTitle>Forward!</SectionTitle>
-            <SectionTitle>And don't turn</SectionTitle>
+            <SectionTitle>Do you have an idea?</SectionTitle>
+            <SectionTitle> I'm ready!</SectionTitle>
             <Button>Hire me</Button>
         </StyledSlogan>
     );
@@ -16,5 +15,4 @@ export const Slogan = () => {
 
 const StyledSlogan = styled.section`
   min-height: 30vh;
-  background-color: beige;
 `

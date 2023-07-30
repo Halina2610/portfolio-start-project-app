@@ -26,7 +26,6 @@ const StyledWork = styled.div`
   overflow: hidden;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  background-color: #69f1f1;
 `
 const Image = styled.img`
   height: 260px;
