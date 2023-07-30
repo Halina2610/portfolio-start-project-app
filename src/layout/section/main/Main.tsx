@@ -14,9 +14,9 @@ export const Main = () => {
 
                     <FlexWrapper align={"center"} justify={"space-between"}>
                         <div>
-                            <SmallText>Hello, I'm</SmallText>
-                            <Name>Halina Klyashtornaya</Name>
-                            <MainTitle>A Web Developer</MainTitle>
+                            <SmallText>Hello,</SmallText>
+                            <Name>I'm <span>Halina Klyashtornaya</span></Name>
+                            <MainTitle>A Web Developer.</MainTitle>
                             <SocialIconsList/>
                         </div>
                         <StyledPhoto src={photo} alt=""/>
@@ -44,6 +44,23 @@ const Name = styled.h2`
   font-weight: 700;
   letter-spacing: 0.06em;
   margin: 10px 0;
+  
+  span {
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 20px;
+      background-color: ${Theme.colors.accent};
+      
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      
+    }
+  }
 `
 
 const SmallText = styled.span`
