@@ -65,9 +65,6 @@ export const ContainerAbout = styled.div`
 
 `
 const StyledTitleAbout = styled.h3`
-  text-align: center;
-  font-size: 26px;
-  font-weight: 700;
   letter-spacing: 0.06em;
   padding: 10px 0;
 
@@ -79,21 +76,20 @@ const StyledTitleAbout = styled.h3`
     &::before {
       content: "";
       display: inline-block;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       background-color: ${Theme.colors.accent};
       border-radius: 50%;
 
       position: absolute;
       bottom: -10px;
-      left: -25px;
+      left: -20px;
       z-index: -1;
 
     }
   }
 `
 const Text = styled.p`
-  font-size: 20px;
   padding: 10px;
   margin-top: 20px;
   text-align: justify;

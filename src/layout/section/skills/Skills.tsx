@@ -19,15 +19,15 @@ export const Skills = () => {
                     </Slide>
                     <Slide>
                         <Content>
-                            <Skill iconId={"css"}/>
-                            <Skill iconId={"react"}/>
                             <Skill iconId={"html"}/>
-                            <Skill iconId={"git"}/>
-                            <Skill iconId={"github"}/>
+                            <Skill iconId={"react"}/>
+                            <Skill iconId={"css"}/>
                             <Skill iconId={"styled components"}/>
-                            <Skill iconId={"js"}/>
-                            <Skill iconId={"typescript"}/>
                             <Skill iconId={"vscode"}/>
+                            <Skill iconId={"github"}/>
+                            <Skill iconId={"typescript"}/>
+                            <Skill iconId={"git"}/>
+                            <Skill iconId={"js"}/>
                         </Content>
 
                     </Slide>
@@ -52,9 +52,6 @@ const Slide = styled.div`
   padding: 20px 40px;
 `
 const StyledTitleTable = styled.h3`
-  text-align: center;
-  font-size: 30px;
-  font-weight: 700;
   letter-spacing: 0.06em;
   margin: 10px 0;
   padding: 20px 0;
@@ -67,8 +64,8 @@ const StyledTitleTable = styled.h3`
     &::before {
       content: "";
       display: inline-block;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       background-color: ${Theme.colors.accent};
       border-radius: 50%;
 

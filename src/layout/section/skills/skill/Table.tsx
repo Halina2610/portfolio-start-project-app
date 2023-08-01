@@ -30,6 +30,18 @@ export const Table = () => {
                     <TableCell>Belarus/ Lithuania</TableCell>
                 </TableRow>
             </TableBody>
+            <TableHead>
+                <TableRow>
+                    <TableHeaderCell colSpan={3}>TILDA EDUCATION</TableHeaderCell>
+                </TableRow>
+            </TableHead>
+            <TableBody>
+                <TableRow>
+                    <TableCell>Designer</TableCell>
+                    <TableCell>2020</TableCell>
+                    <TableCell> </TableCell>
+                </TableRow>
+            </TableBody>
         </TableContainer>
     );
 };

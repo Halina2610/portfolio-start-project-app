@@ -41,5 +41,20 @@ export const GlobalStyles = createGlobalStyle`
   section:nth-of-type(even) {
     background-color: ${Theme.colors.thirdBg};
   }
+  
+ h3{
+   text-align: center;
+   font-size: 26px;
+   font-weight: 700;
 
+ }
+  h4{
+    font-size: 20px;
+    
+  }
+  
+  p{
+    font-size: 16px;
+    
+  }
 `

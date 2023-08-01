@@ -21,7 +21,7 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  width: 30%;
+  width: 40%;
   margin-bottom: 20px;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@ const Image = styled.img`
   object-fit: cover;
 `
 
-const Title = styled.h3`
+const Title = styled.h4`
 
 `
 

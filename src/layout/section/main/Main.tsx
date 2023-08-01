@@ -58,14 +58,14 @@ const Name = styled.h2`
     &::before {
       content: "";
       display: inline-block;
-      width: 100px;
-      height: 100px;
+      width: 95px;
+      height: 95px;
       background-color: ${Theme.colors.accent};
       border-radius: 50%;
 
       position: absolute;
       bottom: -10px;
-      left: -10px;
+      left: -20px;
       z-index: -1;
 
     }

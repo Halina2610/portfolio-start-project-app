@@ -40,8 +40,6 @@ const NavLink = styled.a<{ active?: boolean }>`
 
   &:hover {
     color: ${Theme.colors.accent};
-    font-size: 24px;
-    font-weight: 700;
     border-bottom: 3px solid ${Theme.colors.accent};
   }
 `;
