@@ -42,15 +42,14 @@ const StyledSkills = styled.section`
 `
 const Content = styled.div`
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: stretch;
-  margin-left: 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 `
 
 const Slide = styled.div`
-  flex-basis: 40% 60%;
-  padding: 10px 40px;
+  padding: 20px 40px;
 `
 const StyledTitleTable = styled.h3`
   text-align: center;

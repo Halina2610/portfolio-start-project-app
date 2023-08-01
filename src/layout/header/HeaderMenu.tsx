@@ -35,12 +35,12 @@ const NavList = styled.ul`
 
 
 const NavLink = styled.a<{ active?: boolean }>`
-  font-size: 25px;
+  font-size: 22px;
   color: ${Theme.colors.textColor};
 
   &:hover {
     color: ${Theme.colors.accent};
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     border-bottom: 3px solid ${Theme.colors.accent};
   }

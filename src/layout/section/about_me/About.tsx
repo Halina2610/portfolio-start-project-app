@@ -2,6 +2,7 @@ import React from 'react';
 import {SectionTitle} from "../../../components/SectionTitle";
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme";
+import {Button} from "../../../components/button/Button";
 
 export const About = () => {
     return (
@@ -10,9 +11,9 @@ export const About = () => {
             <ContainerAbout>
 
                 <Slide>
-
+                    <StyledTitleAbout><span>Ha</span>lina Klyashtornaya</StyledTitleAbout>
                     <Text>
-                        <span>I am</span>  a historian, mother of two children, studying front-end development.
+                        I am a historian, mother of two children, studying front-end development.
                         My goal for next year is to become a developer.
                     </Text>
                     <Text>
@@ -39,10 +40,11 @@ export const About = () => {
                         <List><span>Remote work:</span> Available</List>
                         <List><span> languages: </span> English (A1), Russian, Belarusian</List>
                     </StyledList>
-
                 </Slide>
 
             </ContainerAbout>
+            <Button>Download CV</Button>
+
         </StyledAbout>
 
     )
@@ -54,7 +56,7 @@ const StyledAbout = styled.section`
 export const ContainerAbout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1370px;
+  max-width: 1170px;
   width: 100%;
   min-height: 100%;
   padding: 0 15px;
@@ -62,34 +64,41 @@ export const ContainerAbout = styled.div`
   /*outline: 1px solid red;*/
 
 `
-const Text = styled.p`
-  font-size: 1.5em;
-  padding: 10px;
-  margin-top: 20px;
-  text-align: justify;
+const StyledTitleAbout = styled.h3`
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 10px 0;
 
   span {
     position: relative;
     z-index: 0;
-    margin-bottom: 20px;
     color: ${Theme.colors.secondaryBg};
-    font-weight: 600;
 
     &::before {
       content: "";
       display: inline-block;
-      width: 100px;
-      height: 100px;
+      width: 70px;
+      height: 70px;
       background-color: ${Theme.colors.accent};
       border-radius: 50%;
 
       position: absolute;
       bottom: -10px;
-      left: -35px;
+      left: -25px;
       z-index: -1;
+
     }
   }
 `
+const Text = styled.p`
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: justify;
+`
+
 const Slide = styled.div`
   padding: 20px;
   margin: 40px 40px 40px 50px;
@@ -97,7 +106,7 @@ const Slide = styled.div`
 const StyledList = styled.ul`
 `
 const List = styled.li`
-  font-size: 1.5em;
+  font-size: 20px;
   padding: 10px;
   border-left: 2px solid ${Theme.colors.accent};
   border-bottom: 2px solid ${Theme.colors.primaryBg};

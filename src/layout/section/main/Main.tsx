@@ -44,7 +44,7 @@ const MainTitle = styled.h1`
   font-family: "Nunito Sans", sans-serif;
 `
 const Name = styled.h2`
-  font-size: 58px;
+  font-size: 52px;
   font-weight: 700;
   letter-spacing: 0.06em;
   margin: 10px 0;
@@ -123,6 +123,6 @@ const StyledPhoto = styled.img`
   padding: 0.6em;
   margin-bottom: 1em;
   background-color: ${Theme.colors.thirdBg};
-  margin-right: 100px;
+  margin-right: 120px;
 `
 

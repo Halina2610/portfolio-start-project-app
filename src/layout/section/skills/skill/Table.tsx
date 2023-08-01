@@ -37,7 +37,7 @@ export const Table = () => {
 
 const TableContainer = styled.table`
   border-collapse: collapse;
-  font-size: 1.5rem;
+  font-size: 24px;
 `;
 
 const TableHead = styled.thead`
@@ -48,7 +48,7 @@ const TableRow = styled.tr`
 
 const TableHeaderCell = styled.th<{ colspan?: number }>`
   text-align: center;
-  font-size: 1.1em;
+  font-size: 20px;
   padding: 20px;
   background-color: ${Theme.colors.primaryBg};
   ${({ colspan }) => colspan && `grid-column: span ${colspan};`}
@@ -57,6 +57,7 @@ const TableHeaderCell = styled.th<{ colspan?: number }>`
 const TableBody = styled.tbody`
 border-bottom: 2px solid ${Theme.colors.primaryBg};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 18px;
 
 `;
 
