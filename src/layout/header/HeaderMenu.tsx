@@ -6,21 +6,11 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledHeaderMenu>
             <NavList>
-
                 {props.menuItems.map((item, index) => {
                     return <NavListItem key={index}>
-                        <NavLink href="">
-                            {item}
-                            <Mask>
-                                <span>{item}</span>
-                            </Mask>
-                            <Mask>
-                                <span>{item}</span>
-                            </Mask>
-                        </NavLink>
+                        <NavLink href="">{item}</NavLink>
                     </NavListItem>
                 })}
-
             </NavList>
 
         </StyledHeaderMenu>
@@ -44,60 +34,23 @@ const NavList = styled.ul`
 `;
 
 
-
 const NavLink = styled.a<{ active?: boolean }>`
-font-size: 25px;  
-color: transparent;
+  font-size: 25px;
+  color: ${Theme.colors.textColor};
+
+  &:hover {
+    color: ${Theme.colors.accent};
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 3px solid ${Theme.colors.accent};
+  }
 `;
 
-const Mask = styled.span`
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  height: 50%;
-  overflow-y: hidden;
-  color: ${Theme.colors.accent};
-  
-  & + & {
-    top: 50%;
-    span {
-      display: inline-block;
-      transform: translateY(-50%);
-    }
-  }
-`
 
 const NavListItem = styled.li`
   margin-right: 20px;
   position: relative;
-  
-  &::before {
-    content: "";
-    display: inline-block;
-    height: 3px;
-    background-color: ${Theme.colors.accent};
-    border-radius: 20%;
-    
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    right: -10px;
-    z-index: 1;
 
-    transform: scale(0);
-  }
-  
-  &:hover {
-    &::before {
-      transform: scale(1);
-    }
-    ${Mask} {
-      transform: skewX(5deg) translateX(5px);
-color: ${Theme.colors.accentHover};
-      & + ${Mask} {
-        transform: skewX(12deg) translateX(-5px);
-      }
-    }
-  }
+
+ 
 `

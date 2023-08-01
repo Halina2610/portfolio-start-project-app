@@ -28,9 +28,18 @@ export const GlobalStyles = createGlobalStyle`
     background-color: unset;
     border: none;
   }
-
+  
+  button {
+    background-color: unset;
+    border: none;
+  }
+  
+  section {
+    padding: 100px 0;
+  }
+  
   section:nth-of-type(even) {
-    background-color: ${Theme.colors.primaryBg};
+    background-color: ${Theme.colors.thirdBg};
   }
 
 `

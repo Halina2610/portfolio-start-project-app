@@ -14,7 +14,7 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
-                    <Logo/>
+                   <Logo/>
                     <HeaderMenu menuItems={items}/>
                 </FlexWrapper>
 
@@ -25,7 +25,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   left: 0;

@@ -7,8 +7,7 @@ export const Slogan = () => {
     return (
         <StyledSlogan>
             <SectionTitle>Do you have an idea?</SectionTitle>
-            <SectionTitle> I'm ready!</SectionTitle>
-            <Button>Hire me</Button>
+            <Button>Contact me</Button>
         </StyledSlogan>
     );
 };
