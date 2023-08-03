@@ -21,6 +21,7 @@ export const GlobalStyles = createGlobalStyle`
   
   a {
     text-decoration: none;
+    color: ${Theme.colors.textColor};
   }
   
   ul {

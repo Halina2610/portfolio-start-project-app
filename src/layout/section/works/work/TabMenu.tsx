@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from "../../../../components/link/Link";
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const TabMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMenu>
             <NavList>
 
                 {props.menuItems.map((item,index) => {
                     return <NavListItem key={index}>
-                        <NavLink href="">{item}</NavLink>
+                        <Link href="">{item}</Link>
                     </NavListItem>
                 })}
 
@@ -37,14 +38,6 @@ const NavList = styled.ul`
 
 const NavListItem = styled.li`
   margin-right: 20px;
+  position: relative;
 `;
 
-const NavLink = styled.a<{ active?: boolean }>`
-  text-decoration: none;
-  color: ${props => (props.active ? '#007bff' : '#000')};
-  font-weight: ${props => (props.active ? 'bold' : 'normal')};
-  transition: color 0.3s ease;
-  &:hover {
-    color: #007bff;
-  }
-`;

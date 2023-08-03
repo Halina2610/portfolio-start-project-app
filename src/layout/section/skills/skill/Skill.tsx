@@ -26,6 +26,5 @@ const StyledSkill = styled.div`
   
   &:hover{
     outline: 2px solid ${Theme.colors.accent}
-    
   }
 `

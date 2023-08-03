@@ -109,7 +109,7 @@ const PhotoWrapperTwo = styled.div`
 
     position: absolute;
     top: -40px;
-    left: 20px;
+    left: 40px;
     z-index: -2;
   }
 `

@@ -3,6 +3,8 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme";
 import {Button} from "../../../components/button/Button";
+import { Container } from '../../../components/Container';
+
 
 export const About = () => {
     return (
@@ -41,9 +43,9 @@ export const About = () => {
                         <List><span> languages: </span> English (A1), Russian, Belarusian</List>
                     </StyledList>
                 </Slide>
+                <Button>Download CV</Button>
 
             </ContainerAbout>
-            <Button>Download CV</Button>
 
         </StyledAbout>
 
@@ -53,15 +55,9 @@ export const About = () => {
 const StyledAbout = styled.section`
 
 `
-export const ContainerAbout = styled.div`
+const ContainerAbout = styled(Container)`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1170px;
-  width: 100%;
-  min-height: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-  /*outline: 1px solid red;*/
 
 `
 const StyledTitleAbout = styled.h3`

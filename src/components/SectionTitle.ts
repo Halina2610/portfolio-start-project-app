@@ -8,7 +8,7 @@ export const SectionTitle = styled.h2`
   letter-spacing: 5px;
   margin-bottom: 90px;
   font-family: "Nunito Sans", sans-serif;
-
+text-transform: capitalize;
   
   position: relative;
   

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {Theme} from "../../../../styles/Theme";
 
+
+
 export const Table = () => {
     return (
         <TableContainer>
@@ -14,7 +16,7 @@ export const Table = () => {
                 <TableRow>
                     <TableCell>Historian, teacher of humanitarian disciplines</TableCell>
                     <TableCell>2011 - 2017</TableCell>
-                    <TableCell>Belarus</TableCell>
+                    <TableCell><span>Belarus</span></TableCell>
 
                 </TableRow>
             </TableBody>
@@ -27,7 +29,7 @@ export const Table = () => {
                 <TableRow>
                     <TableCell>Courses of study, Front-end Developer (ReactJS)</TableCell>
                     <TableCell>Since February 2023 until now</TableCell>
-                    <TableCell>Belarus/ Lithuania</TableCell>
+                    <TableCell>Belarus</TableCell>
                 </TableRow>
             </TableBody>
             <TableHead>
@@ -37,7 +39,7 @@ export const Table = () => {
             </TableHead>
             <TableBody>
                 <TableRow>
-                    <TableCell>Designer</TableCell>
+                    <TableCell>Tilda-developer</TableCell>
                     <TableCell>2020</TableCell>
                     <TableCell> </TableCell>
                 </TableRow>
@@ -76,4 +78,6 @@ border-bottom: 2px solid ${Theme.colors.primaryBg};
 const TableCell = styled.td`
   text-align: left;
   padding: 10px;
+  
+ 
 `;
