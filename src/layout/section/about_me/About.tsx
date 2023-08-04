@@ -104,6 +104,6 @@ const List = styled.li`
   border-bottom: 2px solid ${Theme.colors.primaryBg};
 
   span {
-    font-weight: bold;
+    font-weight: 700;
   }
 `

@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: ${Theme.colors.textColor};
     line-height: 1.2;
+
   }
   
   a {
@@ -33,6 +34,10 @@ export const GlobalStyles = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
+    cursor: pointer;
+    color: ${Theme.colors.textColor};
+
+
   }
   
   section {
@@ -50,12 +55,13 @@ export const GlobalStyles = createGlobalStyle`
 
  }
   h4{
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
     
   }
   
   p{
     font-size: 16px;
-    
+    line-height: 1.4;
   }
 `

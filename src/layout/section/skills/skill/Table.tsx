@@ -52,6 +52,7 @@ export const Table = () => {
 const TableContainer = styled.table`
   border-collapse: collapse;
   font-size: 24px;
+  line-height: 1.4;
 `;
 
 const TableHead = styled.thead`

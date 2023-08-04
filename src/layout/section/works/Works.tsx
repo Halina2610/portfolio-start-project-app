@@ -19,20 +19,33 @@ export const Works = () => {
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={workItems}/>
-                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
+                <FlexWrapper justify={"space-between"} align={"flex-start"}>
+                    <WrapperWorks>
+                        <Work title={"Clothing store"}
+                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                              src={Project2}
+                              hrefDemo={"#"}
+                              hrefCode={"#"}/>
+                        <Work title={"Clothing store"}
+                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                              src={Project1}
+                              hrefDemo={"#"}
+                              hrefCode={"#"}/>
+                    </WrapperWorks>
+                    <WrapperWorks>
 
-                    <Work title={"Clothing store"}
-                          text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                          src={Project2}/>
-                    <Work title={"A toy shop"}
-                          text={"The project of a toy store website for a portfolio was created on Tilda with a unique and attractive design, optimized for viewing on any device, and provides convenient search and filtering functions for products, as well as order processing."}
-                          src={Project1}/>
-                    <Work title={"Clothing store"}
-                          text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                          src={Project3}/>
-                    <Work title={"Clothing store"}
-                          text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                          src={Project4}/>
+                        <Work title={"A toy shop"}
+                              text={"The project of a toy store website for a portfolio was created on Tilda with a unique and attractive design, optimized for viewing on any device, and provides convenient search and filtering functions for products, as well as order processing."}
+                              src={Project3}
+                              hrefDemo={"#"}
+                              hrefCode={"#"}/>
+                        <Work title={"Clothing store"}
+                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                              src={Project4}
+                              hrefDemo={"#"}
+                              hrefCode={"#"}/>
+                    </WrapperWorks>
+
                 </FlexWrapper>
             </Container>
 
@@ -41,6 +54,9 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-  min-height: 100vh;
 `
+const WrapperWorks = styled.div`
+  display: flex;
+  flex-direction: column;
 
+`

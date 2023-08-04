@@ -37,7 +37,6 @@ const NavList = styled.ul`
 `;
 
 const NavListItem = styled.li`
-  margin-right: 20px;
-  position: relative;
+ 
 `;
 

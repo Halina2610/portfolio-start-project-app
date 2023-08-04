@@ -1,9 +1,6 @@
 import React from 'react';
 import {Icons} from "../../../../components/icon/Icons";
 import styled from "styled-components";
-import {FlexWrapper} from "../../../../components/FlexWrapper";
-import {Theme} from "../../../../styles/Theme";
-
 
 
 type SkillPropsType = {
@@ -12,19 +9,14 @@ type SkillPropsType = {
 export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill>
-            <FlexWrapper justify={"center"} align={"center"}>
-              <Icons iconId={props.iconId}/>
-            </FlexWrapper>
+            <Icons iconId={props.iconId}/>
         </StyledSkill>
     );
 };
 
 const StyledSkill = styled.div`
-  width: 25%;
+  width: 30%;
   padding: 10px;
-  margin: 30px 10px;
-  
-  &:hover{
-    outline: 2px solid ${Theme.colors.accent}
-  }
+  margin: 30px 0;
 `
+
