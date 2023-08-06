@@ -3,7 +3,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme";
 import {Button} from "../../../components/button/Button";
-import { Container } from '../../../components/Container';
+import {Container} from '../../../components/Container';
 
 
 export const About = () => {
@@ -29,6 +29,7 @@ export const About = () => {
                     </Text>
 
                 </Slide>
+
                 <Slide>
 
                     <StyledList>
@@ -38,13 +39,13 @@ export const About = () => {
                         <List><span>Address:</span> Ushachi, Vitebsk region, Belarus</List>
                         <List><span>E-mail:</span> vievamaxa@gmail.com</List>
                         <List><span>Phone:</span> +375(33)677-44-09</List>
-                        <List><span>Telegram: </span><a href={"https://t.me/halina_kls"} target={"_blanc"}>@halina_kls</a></List>
+                        <List><span>Telegram: </span><a href={"https://t.me/halina_kls"}
+                                                        target={"_blanc"}>@halina_kls</a></List>
                         <List><span>Remote work:</span> Available</List>
                         <List><span> languages: </span> English (A1), Russian, Belarusian</List>
                     </StyledList>
                 </Slide>
-                <Button>Download CV</Button>
-
+                <Button>Download <strong>CV</strong></Button>
             </ContainerAbout>
 
         </StyledAbout>
@@ -53,11 +54,16 @@ export const About = () => {
         ;
 };
 const StyledAbout = styled.section`
+  ${Button} {
+    margin: -20px auto 0;
 
+  }
 `
 const ContainerAbout = styled(Container)`
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  
 
 `
 const StyledTitleAbout = styled.h3`
@@ -94,8 +100,11 @@ const Text = styled.p`
 const Slide = styled.div`
   padding: 20px;
   margin: 40px 40px 40px 50px;
+
+
 `
 const StyledList = styled.ul`
+
 `
 const List = styled.li`
   font-size: 20px;

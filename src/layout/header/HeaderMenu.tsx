@@ -18,6 +18,10 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
 };
 
 const StyledHeaderMenu = styled.nav`
+  @media ${Theme.media.tablet} {
+    display: none;
+  }
+  
   ul {
     display: flex;
     gap: 30px;

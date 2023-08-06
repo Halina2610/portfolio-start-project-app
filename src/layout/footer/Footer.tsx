@@ -9,7 +9,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper justify={"space-between"} wrap={"wrap"} >
+                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
 
                     <Content>
                         <Contacts><strong>Phone:</strong> +375(33)677-44-09</Contacts>
@@ -32,18 +32,20 @@ const StyledFooter = styled.footer`
   background-color: ${Theme.colors.primaryBg};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   padding: 40px 0 0;
-  
+
 `
 const Content = styled.div`
   width: calc(33% - 20px);
-  
+
 
 `
 const Contacts = styled.p`
-    
+font-size: 14px;
 `
 
 const Copyright = styled.small`
   margin: 0 auto;
+  font-size: 14px;
+  
 
 `

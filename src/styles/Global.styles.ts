@@ -64,4 +64,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     line-height: 1.4;
   }
+ &:focus-visible {
+   outline: 1px solid ${Theme.colors.accent};
+   
+ }
 `

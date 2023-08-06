@@ -12,7 +12,7 @@ export const Slogan = () => {
             <Container>
                 <FlexWrapper direction={"column"} align={"center"}>
                     <SectionTitle><span>Do</span> you have an idea?</SectionTitle>
-                <Button>Contact me</Button>
+                <Button><a href={"https://t.me/halina_kls"} target={"-blanc"}>my telegram</a></Button>
                 </FlexWrapper>
             </Container>
 

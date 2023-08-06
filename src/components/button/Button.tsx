@@ -10,12 +10,12 @@ export const Button = styled.button`
   height: 32px;
   border: 3px solid ${Theme.colors.accent};
   transition: 0.2s;
-  
+
   &:hover {
-    
+
     background: ${Theme.colors.accent};
     font-weight: 700;
   }
-  
+
 
 `
