@@ -44,8 +44,6 @@ const StyledMain = styled.div`
     padding: 20px;
     min-height: 100vh;
     
-    ${FlexWrapper} {
-    }
   }
 `
 const MainTitle = styled.h1`

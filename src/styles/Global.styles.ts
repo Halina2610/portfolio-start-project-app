@@ -1,36 +1,36 @@
 import {createGlobalStyle} from "styled-components";
 import {Theme} from "./Theme";
+import {font} from "./Common";
 
 export const GlobalStyles = createGlobalStyle`
- *,
- *::before,
- *::after {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
- 
-  body {
+  *,
+  *::before,
+  *::after {
     margin: 0;
-    font-family: "Poppins", "Nunito Sans", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    ${font({family: "'Poppins', 'Nunito Sans', sans-serif", weight: 400, lineHeight: "1.2", color: "Theme.colors.textColor"})}
+    margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: ${Theme.colors.textColor};
-    line-height: 1.2;
 
   }
-  
+
   a {
     text-decoration: none;
-    color: ${Theme.colors.textColor};
+    ${font({color: "Theme.colors.textColor"})}
+
   }
-  
+
   ul {
     list-style: none;
     background-color: unset;
     border: none;
   }
-  
+
   button {
     background-color: unset;
     border: none;
@@ -39,34 +39,36 @@ export const GlobalStyles = createGlobalStyle`
 
 
   }
-  
+
   section {
     padding: 100px 0;
   }
-  
+
   section:nth-of-type(even) {
     background-color: ${Theme.colors.thirdBg};
   }
-  
- h3{
-   text-align: center;
-   font-size: 26px;
-   font-weight: 700;
 
- }
-  h4{
+  h3 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+
+  }
+
+  h4 {
     font-size: 18px;
     text-align: center;
-    
+
   }
-  
-  p{
+
+  p {
     font-size: 16px;
     line-height: 1.4;
   }
- &:focus-visible {
-   outline: 1px solid ${Theme.colors.accent};
-   
- }
+
+  &:focus-visible {
+    outline: 1px solid ${Theme.colors.accent};
+
+  }
 
 `
