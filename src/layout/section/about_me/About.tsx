@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {Theme} from "../../../styles/Theme";
 import {Button} from "../../../components/button/Button";
 import {Container} from '../../../components/Container';
+import {SpanAccent} from "../../../components/spanAccent/SpanAccent";
 
 
 export const About = () => {
@@ -13,7 +14,7 @@ export const About = () => {
             <ContainerAbout>
 
                 <Slide>
-                    <StyledTitleAbout><span>Ha</span>lina Klyashtornaya</StyledTitleAbout>
+                    <StyledTitleAbout><SpanAccent>Ha</SpanAccent>lina Klyashtornaya</StyledTitleAbout>
                     <Text>
                         I am a historian, mother of two children, studying front-end development.
                         My goal for next year is to become a developer.
@@ -69,27 +70,16 @@ const ContainerAbout = styled(Container)`
 const StyledTitleAbout = styled.h3`
   letter-spacing: 0.06em;
   padding: 10px 0;
-
-  span {
-    position: relative;
-    z-index: 0;
-    color: ${Theme.colors.secondaryBg};
-
+  
+  ${SpanAccent} {
     &::before {
-      content: "";
-      display: inline-block;
       width: 60px;
       height: 60px;
-      background-color: ${Theme.colors.accent};
-      border-radius: 50%;
 
-      position: absolute;
-      bottom: -10px;
       left: -20px;
-      z-index: -1;
-
-    }
+      
   }
+    
 `
 const Text = styled.p`
   padding: 10px;

@@ -5,7 +5,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
 import {Container} from "../../../components/Container";
 import {Table} from "./skill/Table";
-import {Theme} from "../../../styles/Theme";
+import {SpanAccent} from "../../../components/spanAccent/SpanAccent";
 
 export const Skills = () => {
     return (
@@ -14,7 +14,7 @@ export const Skills = () => {
                 <SectionTitle>Skills</SectionTitle>
                 <FlexWrapper>
                     <Slide>
-                        <StyledTitleTable><span>Edu</span>cation</StyledTitleTable>
+                        <StyledTitleTable><SpanAccent>Edu</SpanAccent>cation</StyledTitleTable>
                         <Table/>
                     </Slide>
                     <Slide>
@@ -56,25 +56,13 @@ const StyledTitleTable = styled.h3`
   margin: 10px 0;
   padding: 20px 0;
 
-  span {
-    position: relative;
-    z-index: 0;
-    color: ${Theme.colors.secondaryBg};
-
+  ${SpanAccent} {
     &::before {
-      content: "";
-      display: inline-block;
       width: 60px;
       height: 60px;
-      background-color: ${Theme.colors.accent};
-      border-radius: 50%;
-
-      position: absolute;
-      bottom: -10px;
       left: -10px;
-      z-index: -1;
-
     }
   }
+  
 `
 

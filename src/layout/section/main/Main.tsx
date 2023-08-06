@@ -5,16 +5,18 @@ import {Container} from "../../../components/Container";
 import photo from "../../../assets/img/avatar.png";
 import {SocialIconsList} from "../../../components/SocialIconsList";
 import {Theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
+import {SpanAccent} from "../../../components/spanAccent/SpanAccent";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
 
-                <FlexWrapper align={"center"} justify={"space-between"}>
+                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
                     <div>
                         <SmallText>Hello, I'm </SmallText>
-                        <Name><span>Ha</span>lina Klyashtornaya</Name>
+                        <Name><SpanAccent>Ha</SpanAccent>lina Klyashtornaya</Name>
                         <MainTitle>A Web Developer.</MainTitle>
                         <SocialIconsList/>
                     </div>
@@ -33,49 +35,43 @@ export const Main = () => {
 const StyledMain = styled.div`
   display: flex;
   min-height: 100vh;
+  margin-top: 65px;
   background-color: ${Theme.colors.thirdBg};
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-
+  
+  @media ${Theme.media.tablet} {
+    margin: 65px 0;
+    padding: 20px;
+    min-height: 100vh;
+    
+    ${FlexWrapper} {
+    }
+  }
 `
 const MainTitle = styled.h1`
-  font-size: 40px;
-  font-weight: 600;
+  ${font({family: "'Nunito Sans', sans-serif", weight: 400, Fmax: 40, Fmin: 30 })}
   padding: 0 0 20px 0;
-  font-family: "Nunito Sans", sans-serif;
 `
 const Name = styled.h2`
-  font-size: 52px;
-  font-weight: 700;
+  ${font({weight: 700, Fmax: 52, Fmin: 36})}
   letter-spacing: 0.06em;
   margin: 10px 0;
   padding: 20px 0;
 
-  span {
-    position: relative;
-    z-index: 0;
-    color: ${Theme.colors.secondaryBg};
-
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 95px;
-      height: 95px;
-      background-color: ${Theme.colors.accent};
-      border-radius: 50%;
-
-      position: absolute;
-      bottom: -10px;
-      left: -20px;
-      z-index: -1;
-
+  @media ${Theme.media.tablet} {
+    margin: 15px 0 22px;
+    ${SpanAccent} {
+      &::before {
+        width: 70px;
+        height: 70px;
+        left: -10px;
+      }
     }
   }
 `
 
 const SmallText = styled.span`
-  font-size: 28px;
-  font-family: "Nunito Sans", sans-serif;
-
+  ${font({family: "'Nunito Sans', sans-serif", Fmax: 28, Fmin: 20})}
 `
 
 const PhotoWrapper = styled.div`
@@ -93,6 +89,12 @@ const PhotoWrapper = styled.div`
     top: -20px;
     left: 20px;
     z-index: -1;
+    
+    @media ${Theme.media.mobile} {
+      width: 310px;
+      height: 310px;
+      left: 5px;
+    }
   }
 
 `
@@ -111,6 +113,10 @@ const PhotoWrapperTwo = styled.div`
     top: -40px;
     left: 40px;
     z-index: -2;
+
+    @media ${Theme.media.mobile}{
+      display: none;
+    }
   }
 `
 
@@ -124,5 +130,11 @@ const StyledPhoto = styled.img`
   margin-bottom: 1em;
   background-color: ${Theme.colors.thirdBg};
   margin-right: 120px;
+
+  @media ${Theme.media.mobile}{
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
 `
 

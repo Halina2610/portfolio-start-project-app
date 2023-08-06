@@ -4,8 +4,8 @@ import styled from "styled-components";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Theme} from "../../styles/Theme";
-import {HeaderMenu} from "./HeaderMenu";
-import {MobileMenu} from "./MobileMenu";
+import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import {MobileMenu} from "./mobileMenu/MobileMenu";
 
 const items = ["Home", "About me", "Skills", "Works", "Contact"]
 
@@ -35,16 +35,7 @@ const StyledHeader = styled.header`
   right: 0;
   background-color: ${Theme.colors.primaryBg};
   z-index: 9999;
-
-  @media ${Theme.media.tablet} {
-    ${Container} {
-      margin-left: 0;
-      max-width: 100vw;
-    }
-    @media ${Theme.media.mobile} {
-      ${Container} {
-        margin-left: 0;
-        max-width: 100vw;
-      }
-  }
+  width: 100vw;
+  height: 65px;
+  
 `

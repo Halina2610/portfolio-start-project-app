@@ -5,13 +5,14 @@ import {Button} from "../../../components/button/Button";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Theme} from "../../../styles/Theme";
+import {SpanAccent} from "../../../components/spanAccent/SpanAccent";
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
             <Container>
                 <FlexWrapper direction={"column"} align={"center"}>
-                    <SectionTitle><span>Do</span> you have an idea?</SectionTitle>
+                    <SectionTitle><SpanAccent>Do</SpanAccent> you have an idea?</SectionTitle>
                 <Button><a href={"https://t.me/halina_kls"} target={"-blanc"}>my telegram</a></Button>
                 </FlexWrapper>
             </Container>
@@ -27,24 +28,13 @@ const StyledSlogan = styled.section`
   text-transform: none;
   
 }
-  
-    span {
-      position: relative;
-      color: ${Theme.colors.secondaryBg};
-      z-index: 1;
-      
-      &::after {
-        content: "";
-        background-color: ${Theme.colors.accent};
-        height: 90px;
-        width: 90px;
-        border-radius: 50%;
-        
-        position: absolute;
-        bottom: -10px;
-        left: -20px;
-        z-index: -1;
-      }
+  ${SpanAccent} {
+    &::before {
+      width: 90px;
+      height: 90px;
+      left: -20px;
     }
+  }
+ 
   
 `

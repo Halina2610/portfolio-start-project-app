@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {Theme} from "../../styles/Theme";
+import {Theme} from "../../../styles/Theme";
 
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (

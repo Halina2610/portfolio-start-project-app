@@ -68,4 +68,5 @@ export const GlobalStyles = createGlobalStyle`
    outline: 1px solid ${Theme.colors.accent};
    
  }
+
 `

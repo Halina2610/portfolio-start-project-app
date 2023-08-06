@@ -1,6 +1,6 @@
 import React from "react";
 import styled, {css} from "styled-components";
-import {Theme} from "../../styles/Theme";
+import {Theme} from "../../../styles/Theme";
 
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
@@ -26,22 +26,20 @@ const StyledMobileMenu = styled.nav`
 
   @media ${Theme.media.tablet} {
     display: block;
-    max-width: 100vw;
 
   }
   @media ${Theme.media.mobile} {
     display: block;
-    max-width: 100vw;
 
   }
 
 `
 const BurgerButton = styled.button<{ isOpen: boolean }>`
-  position: fixed;
-  width: 200px;
-  height: 200px;
-  top: -120px;
-  right: 60px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -20px;
+  right: 0;
   z-index: 99999999;
 
   span {
@@ -55,7 +53,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     bottom: 50px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
-      background-color: ${Theme.colors.primaryBg};
+      background-color: rgba(255, 255, 255, 0);
 
     `}
     &::before {
@@ -87,7 +85,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(45deg) translateY(0);
-        width: 36px;
+        width: 36px; 
       `}
     }
 
@@ -97,6 +95,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 const MenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
   max-width: 100vw;
+  max-height: 100vh;
   background-color: ${Theme.colors.primaryBg};
   opacity: 0.9;
   top: 0;
