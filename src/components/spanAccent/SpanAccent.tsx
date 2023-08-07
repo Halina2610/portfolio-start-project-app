@@ -9,14 +9,14 @@ export const SpanAccent =styled.span`
 &::before {
         content: "";
         display: inline-block;
-        width: 95px;
-        height: 95px;
+        width: 60px;
+        height: 60px;
         background-color: ${Theme.colors.accent};
         border-radius: 50%;
 
         position: absolute;
         bottom: 0;
-        left: -30px;
+        left: -10px;
         z-index: -1;
     }
     `

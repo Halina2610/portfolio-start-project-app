@@ -49,12 +49,22 @@ const StyledMain = styled.div`
 const MainTitle = styled.h1`
   ${font({family: "'Nunito Sans', sans-serif", weight: 400, Fmax: 40, Fmin: 30 })}
   padding: 0 0 20px 0;
+  letter-spacing: 0.06em;
+
 `
 const Name = styled.h2`
   ${font({weight: 700, Fmax: 52, Fmin: 36})}
   letter-spacing: 0.06em;
   margin: 10px 0;
   padding: 20px 0;
+
+  ${SpanAccent} {
+    &::before {
+      width: 85px;
+      height: 85px;
+      left: -25px;
+    }
+  }
 
   @media ${Theme.media.tablet} {
     margin: 15px 0 22px;

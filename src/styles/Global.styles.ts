@@ -16,13 +16,11 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
   }
 
   a {
     text-decoration: none;
-    ${font({color: "Theme.colors.textColor"})}
-
+   color: ${Theme.colors.textColor};
   }
 
   ul {
@@ -52,12 +50,14 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     font-size: 26px;
     font-weight: 700;
+    letter-spacing: 0.06em;
 
   }
 
   h4 {
     font-size: 18px;
     text-align: center;
+    letter-spacing: 0.06em;
 
   }
 

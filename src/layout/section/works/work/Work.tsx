@@ -33,7 +33,6 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-  width: 90%;
   margin: 20px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);

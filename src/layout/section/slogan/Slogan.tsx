@@ -30,8 +30,8 @@ const StyledSlogan = styled.section`
 }
   ${SpanAccent} {
     &::before {
-      width: 90px;
-      height: 90px;
+      width: 85px;
+      height: 85px;
       left: -20px;
     }
   }

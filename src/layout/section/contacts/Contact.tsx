@@ -8,8 +8,8 @@ import {Theme} from "../../../styles/Theme";
 export const Contacts = () => {
     return (
         <StyledContacts>
-            <Container>
                 <SectionTitle>Contact with me</SectionTitle>
+            <Container>
                 <Call>
                     Please fill out the form on this section to contact with me or send me an email. I will answer you as soon as I receive your message.
                 </Call>

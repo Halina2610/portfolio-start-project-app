@@ -6,19 +6,19 @@ import {Skill} from "./skill/Skill";
 import {Container} from "../../../components/Container";
 import {Table} from "./skill/Table";
 import {SpanAccent} from "../../../components/spanAccent/SpanAccent";
+import {Theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
         <StyledSkills>
-            <Container>
                 <SectionTitle>Skills</SectionTitle>
-                <FlexWrapper>
+                <ContainerSkills>
                     <Slide>
                         <StyledTitleTable><SpanAccent>Edu</SpanAccent>cation</StyledTitleTable>
                         <Table/>
                     </Slide>
                     <Slide>
-                        <Content>
+                        <FlexWrapper justify={"space-between"} align={"center"} wrap={"wrap"}>
                             <Skill iconId={"html"}/>
                             <Skill iconId={"react"}/>
                             <Skill iconId={"css"}/>
@@ -28,11 +28,10 @@ export const Skills = () => {
                             <Skill iconId={"typescript"}/>
                             <Skill iconId={"git"}/>
                             <Skill iconId={"js"}/>
-                        </Content>
+                        </FlexWrapper>
 
                     </Slide>
-                </FlexWrapper>
-            </Container>
+                </ContainerSkills>
         </StyledSkills>
     );
 };
@@ -40,27 +39,34 @@ export const Skills = () => {
 const StyledSkills = styled.section`
 
 `
-const Content = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+const ContainerSkills = styled(Container)`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  ${FlexWrapper} {
+    width: 100%;
+  }
+  @media ${Theme.media.tablet} {
+    grid-template-columns: 1fr
+  }
+
 `
 
 const Slide = styled.div`
   padding: 20px 40px;
+
+  @media ${Theme.media.tablet} {
+    padding: 10px;
+    margin: 0 auto;
+    
+  }
 `
 const StyledTitleTable = styled.h3`
-  letter-spacing: 0.06em;
   margin: 10px 0;
-  padding: 20px 0;
 
   ${SpanAccent} {
     &::before {
-      width: 60px;
-      height: 60px;
-      left: -10px;
+      left: -5px;
     }
   }
   

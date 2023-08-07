@@ -64,23 +64,21 @@ const ContainerAbout = styled(Container)`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  
-
+  @media ${Theme.media.tablet} {
+    grid-template-columns: 1fr
+  }
 `
+
 const StyledTitleAbout = styled.h3`
-  letter-spacing: 0.06em;
   padding: 10px 0;
   
   ${SpanAccent} {
     &::before {
-      width: 60px;
-      height: 60px;
-
       left: -20px;
-      
+    }
   }
-    
 `
+
 const Text = styled.p`
   padding: 10px;
   margin-top: 20px;
