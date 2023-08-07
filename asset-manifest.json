@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-start-project-app/static/css/main.31d6cfe0.css",
-    "main.js": "/portfolio-start-project-app/static/js/main.56eca81f.js",
+    "main.js": "/portfolio-start-project-app/static/js/main.2aa15e2a.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio-start-project-app/static/js/787.25eaef86.chunk.js",
     "static/media/Umneyka.webp": "/portfolio-start-project-app/static/media/Umneyka.d7314748d59880fe1f12.webp",
     "static/media/avatar.png": "/portfolio-start-project-app/static/media/avatar.3d182c0a26f76500ddb7.png",
@@ -10,11 +10,11 @@
     "static/media/project4.webp": "/portfolio-start-project-app/static/media/project4.cfe5350b282cc2b4f775.webp",
     "static/media/iconsSprite.svg": "/portfolio-start-project-app/static/media/iconsSprite.d1ee47a7e3169a3f88e6cb750209729d.svg",
     "index.html": "/portfolio-start-project-app/index.html",
-    "main.56eca81f.js.map": "/portfolio-start-project-app/static/js/main.56eca81f.js.map",
+    "main.2aa15e2a.js.map": "/portfolio-start-project-app/static/js/main.2aa15e2a.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio-start-project-app/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.56eca81f.js"
+    "static/js/main.2aa15e2a.js"
   ]
 }
