@@ -36,7 +36,6 @@ export const SocialIconsList = () => {
 
 
 const IconsList = styled.ul`
-
 `
 const SocialItem = styled.li`
   display: inline-block;

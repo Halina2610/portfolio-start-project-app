@@ -53,7 +53,7 @@ const ContainerSkills = styled(Container)`
 `
 
 const Slide = styled.div`
-  padding: 20px 40px;
+  padding: 20px 25px;
 
   @media ${Theme.media.tablet} {
     padding: 10px;

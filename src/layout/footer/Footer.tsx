@@ -3,25 +3,20 @@ import styled from "styled-components";
 import {Theme} from "../../styles/Theme";
 import {SocialIconsList} from "../../components/SocialIconsList";
 import {Container} from "../../components/Container";
-import {FlexWrapper} from "../../components/FlexWrapper";
+import {GridWrapper} from "../../components/GridWrapper";
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
-                    <Content>
-                        <Contacts><strong>Phone:</strong> +375(33)677-44-09</Contacts>
+                <GridWrapper templateColumns={"repeat(3, 1fr)"} justifyItems={"center"} gap={"20px"} alignItems={"center"}>
+                    <Contacts>
+                        <Contact><strong>Phone:</strong> +375(33)677-44-09</Contact>
                         <Contacts><strong>E-mail:</strong> vievamaxa@gmail.com</Contacts>
-                    </Content>
-                    <Content>
-                        <Copyright>© 2023 Halina Klyashtornaya, All Rights Reserved.</Copyright>
-                    </Content>
-                    <Content>
-                        <SocialIconsList/>
-                    </Content>
-
-                </FlexWrapper>
+                    </Contacts>
+                    <SocialIconsList/>
+                    <Copyright>© 2023 Halina Klyashtornaya, All Rights Reserved.</Copyright>
+                </GridWrapper>
             </Container>
         </StyledFooter>
     );
@@ -33,18 +28,33 @@ const StyledFooter = styled.footer`
   padding: 20px 0 0;
   bottom: 0;
 
-`
-const Content = styled.div`
-  flex-basis: calc(33% - 20px);
+  @media ${Theme.media.tablet} {
+    padding: 20px;
+  }
+
+  ${GridWrapper} {
+    @media ${Theme.media.tablet} {
+      grid-template-columns: 1fr;
+    }
+  }
+}
 `
 
-const Contacts = styled.p`
-  font-size: 14px;
+
+
+const Contacts = styled.div`
+    
+`
+
+const Contact = styled.p`
+  @media ${Theme.media.tablet} {
+    font-size: 12px;
+  }
 `
 
 const Copyright = styled.small`
-  margin: 0 auto;
-  font-size: 14px;
-
+  @media ${Theme.media.tablet} {
+    font-size: 12px;
+  }
 
 `

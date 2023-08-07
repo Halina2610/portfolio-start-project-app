@@ -1,5 +1,6 @@
 import IconsSprite from '../../assets/img/iconsSprite.svg'
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme";
 
 type IconsPropsType = {
     iconId: string
@@ -20,5 +21,8 @@ const StyledIcons = styled.svg`
   &:hover {
     transform: scale(1.2);
 
+    @media ${Theme.media.tablet} {
+      transform: none;
+    }
   }
 `

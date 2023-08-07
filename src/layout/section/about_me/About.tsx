@@ -34,16 +34,16 @@ export const About = () => {
                 <Slide>
 
                     <StyledList>
-                        <List><span>Birthday:</span> 26th october 1992</List>
-                        <List><span>Age:</span> 30</List>
-                        <List><span>Residence:</span> Belarus</List>
-                        <List><span>Address:</span> Ushachi, Vitebsk region, Belarus</List>
-                        <List><span>E-mail:</span> vievamaxa@gmail.com</List>
-                        <List><span>Phone:</span> +375(33)677-44-09</List>
-                        <List><span>Telegram: </span><a href={"https://t.me/halina_kls"}
+                        <List><strong>Birthday:</strong> 26th october 1992</List>
+                        <List><strong>Age:</strong> 30</List>
+                        <List><strong>Residence:</strong> Belarus</List>
+                        <List><strong>Address:</strong> Ushachi, Vitebsk region, Belarus</List>
+                        <List><strong>E-mail:</strong> vievamaxa@gmail.com</List>
+                        <List><strong>Phone:</strong> +375(33)677-44-09</List>
+                        <List><strong>Telegram: </strong><a href={"https://t.me/halina_kls"}
                                                         target={"_blanc"}>@halina_kls</a></List>
-                        <List><span>Remote work:</span> Available</List>
-                        <List><span> languages: </span> English (A1), Russian, Belarusian</List>
+                        <List><strong>Remote work:</strong> Available</List>
+                        <List><strong> languages: </strong> English (A1), Russian, Belarusian</List>
                     </StyledList>
                 </Slide>
                 <Button>Download <strong>CV</strong></Button>
@@ -86,9 +86,15 @@ const Text = styled.p`
 `
 
 const Slide = styled.div`
+  margin: 40px auto;
   padding: 20px;
-  margin: 40px 40px 40px 50px;
+  
 
+  @media ${Theme.media.tablet} {
+    padding: 10px;
+    margin: 0 auto;
+
+  }
 
 `
 const StyledList = styled.ul`
@@ -99,8 +105,4 @@ const List = styled.li`
   padding: 10px;
   border-left: 2px solid ${Theme.colors.accent};
   border-bottom: 2px solid ${Theme.colors.primaryBg};
-
-  span {
-    font-weight: 700;
-  }
 `

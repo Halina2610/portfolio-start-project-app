@@ -3,12 +3,13 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import styled from "styled-components";
 import {Work} from "./work/Work";
 import {TabMenu} from "./work/TabMenu";
-import Project1 from "../../../assets/img/project1.webp"
-import Project2 from "../../../assets/img/project2.webp"
-import Project3 from "../../../assets/img/Umneyka.webp"
-import Project4 from "../../../assets/img/project4.webp"
+import Project1 from "../../../assets/img/projects/project1.webp"
+import Project2 from "../../../assets/img/projects/project2.webp"
+import Project3 from "../../../assets/img/projects/Umneyka.webp"
+import Project4 from "../../../assets/img/projects/project4.webp"
 import {Container} from "../../../components/Container";
 import {Theme} from "../../../styles/Theme";
+import {GridWrapper} from "../../../components/GridWrapper";
 
 const workItems = ["All", "Landing page", "React", "Tilda"]
 
@@ -18,7 +19,7 @@ export const Works = () => {
             <SectionTitle>My Works</SectionTitle>
             <Container>
                 <TabMenu menuItems={workItems}/>
-                <GridStyledWork>
+                <GridWrapper templateColumns={"1fr 1fr"} gap={"20px"}>
 
 
 
@@ -46,7 +47,7 @@ export const Works = () => {
                               hrefDemo={"#"}
                               hrefCode={"#"}/>
 
-                </GridStyledWork>
+                </GridWrapper>
             </Container>
 
         </StyledWorks>
@@ -54,14 +55,9 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
+  ${GridWrapper} {
+    @media ${Theme.media.tablet} {
+      grid-template-columns: 1fr;
+    }
+  }
 `
-
-const GridStyledWork = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-
-  @media ${Theme.media.tablet} {
-    grid-template-columns: 1fr
-  } 
-`;
