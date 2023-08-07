@@ -11,7 +11,7 @@ export const Contacts = () => {
                 <SectionTitle>Contact with me</SectionTitle>
             <Container>
                 <Call>
-                    Please fill out the form on this section to contact with me or send me an email. I will answer you as soon as I receive your message.
+                    Please fill out the form on this section to contact with me or <a href={"vievamaxa@gmail.com"}>send me an email</a>. I will answer you as soon as I receive your message.
                 </Call>
                     <StyledForm>
                         <Field placeholder={"Name"}></Field>
@@ -31,7 +31,7 @@ const StyledContacts = styled.section`
 
 const StyledForm = styled.form`
   max-width: 580px;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,14 @@ const Field = styled.input`
 `
 
 const Call = styled.p`
+  max-width: 580px;
     text-align: center;
-    width: 470px;
-    margin: -20px auto 20px;
+    margin: 20px auto;
+   a {
+     color: ${Theme.colors.accent};
+     font-weight: 700;
+     &:hover {
+       border-bottom: 2px solid ${Theme.colors.accent};
+     }
+   }
 `

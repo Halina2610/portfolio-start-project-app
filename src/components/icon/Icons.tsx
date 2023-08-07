@@ -18,6 +18,7 @@ export const Icons = (props: IconsPropsType) => {
 }
 
 const StyledIcons = styled.svg`
+  margin: 5px;
   &:hover {
     transform: scale(1.2);
 
