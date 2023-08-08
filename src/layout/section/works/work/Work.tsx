@@ -45,7 +45,6 @@ const Image = styled.img`
   width: 100%;
   object-fit: cover;
   padding: 20px 25px 0;
-
 `
 
 const ImageWrapper = styled.div`

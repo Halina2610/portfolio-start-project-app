@@ -11,8 +11,8 @@ export const Footer = () => {
             <Container>
                 <GridWrapper templateColumns={"repeat(3, 1fr)"} justifyItems={"center"} gap={"20px"} alignItems={"center"}>
                     <Contacts>
-                        <Contact><strong>Phone:</strong> +375(33)677-44-09</Contact>
-                        <Contact><strong>E-mail:</strong> vievamaxa@gmail.com</Contact>
+                        <Contact><strong>Phone:</strong><a href={"tel:+375336774409"}>+375(33)677-44-09</a></Contact>
+                        <Contact><strong>E-mail:</strong><a href="mailto:vievamaxa@gmail.com">vievamaxa@gmail.com</a></Contact>
                     </Contacts>
                     <SocialIconsList/>
                     <Copyright>© 2023 Halina Klyashtornaya, All Rights Reserved.</Copyright>
@@ -24,13 +24,11 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   background-color: ${Theme.colors.primaryBg};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(145, 168, 241, 0.39);
   bottom: 0;
   min-height: 65px;
+  padding: 20px;
 
-  @media ${Theme.media.tablet} {
-    padding: 20px;
-  }
 
   ${GridWrapper} {
     @media ${Theme.media.tablet} {
@@ -48,11 +46,13 @@ const Contacts = styled.div`
 
 const Contact = styled.p`
     font-size: 12px;
+  text-align: center;
   
 `
 
 const Copyright = styled.small`
   @media ${Theme.media.tablet} {
     font-size: 12px;
+    text-align: center;
   }
 `

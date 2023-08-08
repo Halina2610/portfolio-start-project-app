@@ -56,7 +56,7 @@ export const About = () => {
 };
 const StyledAbout = styled.section`
   ${Button} {
-    margin: -20px auto 0;
+    margin: 20px auto 0;
 
   }
 `
@@ -88,21 +88,23 @@ const Text = styled.p`
 const Slide = styled.div`
   margin: 40px auto;
   padding: 20px;
-  
 
   @media ${Theme.media.tablet} {
     padding: 10px;
     margin: 0 auto;
 
   }
-
+  @media ${Theme.media.mobile} {
+    width: 100% ;
+    
+  }
 `
 const StyledList = styled.ul`
-
+  border-left: 2px solid ${Theme.colors.accent};
 `
+
 const List = styled.li`
   font-size: 20px;
   padding: 10px;
-  border-left: 2px solid ${Theme.colors.accent};
   border-bottom: 2px solid ${Theme.colors.primaryBg};
 `

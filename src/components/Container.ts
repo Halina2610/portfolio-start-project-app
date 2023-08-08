@@ -5,5 +5,5 @@ export const Container = styled.div`
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+/*  outline: 1px solid red;*/
 `

@@ -22,7 +22,7 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
-  /*background-color: ${Theme.colors.thirdBg};*/
+  background-color: ${Theme.colors.accentWow};
   
   ${SectionTitle} {
   text-transform: none;

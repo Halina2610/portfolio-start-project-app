@@ -56,13 +56,14 @@ const Slide = styled.div`
   padding: 20px 25px;
 
   @media ${Theme.media.tablet} {
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
     
   }
 `
 const StyledTitleTable = styled.h3`
   margin: 10px 0;
+  padding-bottom: 20px;
 
   ${SpanAccent} {
     &::before {
