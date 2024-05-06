@@ -7,7 +7,7 @@ import {Theme} from "../../styles/Theme";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
 
-const items = ["Home", "About me", "Skills", "Works", "Contact"]
+const items = ["About me", "Skills", "Works", "Contact"]
 
 
 export const Header = () => {
@@ -20,9 +20,7 @@ export const Header = () => {
                     <MobileMenu menuItems={items}/>
                     <HeaderMenu menuItems={items}/>
                 </FlexWrapper>
-
             </Container>
-
         </StyledHeader>
     );
 };

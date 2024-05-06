@@ -2,51 +2,38 @@ import React from 'react';
 import {SectionTitle} from "../../../components/SectionTitle";
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme";
-import {Button} from "../../../components/button/Button";
 import {Container} from '../../../components/Container';
 import {SpanAccent} from "../../../components/spanAccent/SpanAccent";
+import {Button} from "../../../components/button/Button";
+import {Table} from "../skills/skill/Table";
 
 
 export const About = () => {
     return (
-        <StyledAbout>
+        <StyledAbout id={'section1'}>
             <SectionTitle>About me</SectionTitle>
             <ContainerAbout>
 
                 <Slide>
-                    <StyledTitleAbout><SpanAccent>Ha</SpanAccent>lina Klyashtornaya</StyledTitleAbout>
-                    <Text>
-                        I am a historian, mother of two children, studying front-end development.
-                        My goal for next year is to become a developer.
-                    </Text>
-                    <Text>
-                        I'm already learning HTML, CSS, and JavaScript and plan to delve into
-                        React and Vue.js to build complex web applications.
-                    </Text>
-                    <Text>
-                        Although the journey will require effort and self-study,
-                        I am determined to fulfill my dream and contribute to the world
-                        of technology.
-                    </Text>
-
+                    <StyledTitleTable><SpanAccent>Edu</SpanAccent>cation</StyledTitleTable>
+                    <Table/>
                 </Slide>
 
                 <Slide>
-
                     <StyledList>
                         <List><strong>Birthday:</strong> 26th october 1992</List>
-                        <List><strong>Age:</strong> 30</List>
                         <List><strong>Residence:</strong> Belarus</List>
                         <List><strong>Address:</strong> Ushachi, Vitebsk region, Belarus</List>
-                        <List><strong>E-mail:</strong> vievamaxa@gmail.com</List>
+                        <List><strong>E-mail:</strong> klastornaagalina@gmail.com</List>
                         <List><strong>Phone:</strong> +375(33)677-44-09</List>
                         <List><strong>Telegram: </strong><a href={"https://t.me/halina_kls"}
                                                         target={"_blanc"}>@halina_kls</a></List>
-                        <List><strong>Remote work:</strong> Available</List>
+                        <List><strong>Remote work, relocation:</strong> Available</List>
                         <List><strong> languages: </strong> English (A1), Russian, Belarusian</List>
                     </StyledList>
+                    <Button>Download CV</Button>
                 </Slide>
-                <Button>Download <strong>CV</strong></Button>
+
             </ContainerAbout>
 
         </StyledAbout>
@@ -56,8 +43,8 @@ export const About = () => {
 };
 const StyledAbout = styled.section`
   ${Button} {
-    margin: 20px auto 0;
-
+    font-weight: 700;
+    margin-top: 20px;
   }
 `
 const ContainerAbout = styled(Container)`
@@ -79,11 +66,7 @@ const StyledTitleAbout = styled.h3`
   }
 `
 
-const Text = styled.p`
-  padding: 10px;
-  margin-top: 20px;
-  text-align: justify;
-`
+
 
 const Slide = styled.div`
   margin: 40px auto;
@@ -100,6 +83,7 @@ const Slide = styled.div`
   }
 `
 const StyledList = styled.ul`
+  margin-top: 40px;
   border-left: 2px solid ${Theme.colors.accent};
 `
 
@@ -107,4 +91,14 @@ const List = styled.li`
   font-size: 20px;
   padding: 10px;
   border-bottom: 2px solid ${Theme.colors.primaryBg};
+`
+
+const StyledTitleTable = styled.h3`
+  padding-bottom: 20px;
+
+  ${SpanAccent} {
+    &::before {
+      left: -5px;
+    }
+  }
 `

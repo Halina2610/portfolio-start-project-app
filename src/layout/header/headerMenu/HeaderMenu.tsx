@@ -7,8 +7,9 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
         <StyledHeaderMenu>
             <NavList>
                 {props.menuItems.map((item, index) => {
+                    const anchorId = `section${index + 1}`;
                     return <NavListItem key={index}>
-                        <NavLink href="">{item}</NavLink>
+                        <NavLink  href={`#${anchorId}`}>{item}</NavLink>
                     </NavListItem>
                 })}
             </NavList>
@@ -52,7 +53,4 @@ const NavLink = styled.a<{ active?: boolean }>`
 const NavListItem = styled.li`
   margin-right: 20px;
   position: relative;
-
-
- 
 `

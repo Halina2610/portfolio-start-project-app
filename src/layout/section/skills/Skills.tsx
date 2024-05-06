@@ -10,12 +10,21 @@ import {Theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id={"section2"}>
                 <SectionTitle>Skills</SectionTitle>
                 <ContainerSkills>
                     <Slide>
-                        <StyledTitleTable><SpanAccent>Edu</SpanAccent>cation</StyledTitleTable>
-                        <Table/>
+                        <FlexWrapper justify={"space-between"} align={"center"} wrap={"wrap"}>
+                            <Skill iconId={"html"}/>
+                            <Skill iconId={"react"}/>
+                            <Skill iconId={"css"}/>
+                            <Skill iconId={"styled components"}/>
+                            <Skill iconId={"vscode"}/>
+                            <Skill iconId={"github"}/>
+                            <Skill iconId={"typescript"}/>
+                            <Skill iconId={"git"}/>
+                            <Skill iconId={"js"}/>
+                        </FlexWrapper>
                     </Slide>
                     <Slide>
                         <FlexWrapper justify={"space-between"} align={"center"} wrap={"wrap"}>
@@ -29,7 +38,6 @@ export const Skills = () => {
                             <Skill iconId={"git"}/>
                             <Skill iconId={"js"}/>
                         </FlexWrapper>
-
                     </Slide>
                 </ContainerSkills>
         </StyledSkills>
@@ -61,15 +69,5 @@ const Slide = styled.div`
     
   }
 `
-const StyledTitleTable = styled.h3`
-  margin: 10px 0;
-  padding-bottom: 20px;
 
-  ${SpanAccent} {
-    &::before {
-      left: -5px;
-    }
-  }
-  
-`
 

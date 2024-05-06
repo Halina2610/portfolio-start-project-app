@@ -7,19 +7,7 @@ export const Table = () => {
     return (
         <TableWrapper>
             <TableContainer>
-                <TableHead>
-                    <TableRow>
-                        <TableHeaderCell colSpan={3}>Polack State University</TableHeaderCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    <TableRow>
-                        <TableCell>Historian, teacher of humanitarian disciplines</TableCell>
-                        <TableCell>2011 - 2017</TableCell>
-                        <TableCell><span>Belarus</span></TableCell>
 
-                    </TableRow>
-                </TableBody>
                 <TableHead>
                     <TableRow>
                         <TableHeaderCell colSpan={3}>IT-Incubator</TableHeaderCell>
@@ -34,14 +22,27 @@ export const Table = () => {
                 </TableBody>
                 <TableHead>
                     <TableRow>
-                        <TableHeaderCell colSpan={3}>TILDA EDUCATION</TableHeaderCell>
+                        <TableHeaderCell colSpan={3}>Udemy</TableHeaderCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     <TableRow>
-                        <TableCell>Tilda-developer</TableCell>
-                        <TableCell>2020</TableCell>
+                        <TableCell>Curses by Ivan Petrichencko, Curses by Bogdan Staschuk. Web developer</TableCell>
+                        <TableCell>2022-2023</TableCell>
                         <TableCell> </TableCell>
+                    </TableRow>
+                </TableBody>
+                <TableHead>
+                    <TableRow>
+                        <TableHeaderCell colSpan={3}>Polack State University</TableHeaderCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    <TableRow>
+                        <TableCell>Historian, teacher of humanitarian disciplines</TableCell>
+                        <TableCell>2011 - 2017</TableCell>
+                        <TableCell><span>Belarus</span></TableCell>
+
                     </TableRow>
                 </TableBody>
             </TableContainer>
@@ -77,13 +78,10 @@ const TableBody = styled.tbody`
   border-bottom: 2px solid ${Theme.colors.primaryBg};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   font-size: 18px;
-
 `;
 
 const TableCell = styled.td`
   text-align: left;
   padding: 10px;
   background-color: ${Theme.colors.thirdBg};
-
-
 `;

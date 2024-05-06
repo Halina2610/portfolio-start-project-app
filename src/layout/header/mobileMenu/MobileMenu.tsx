@@ -11,8 +11,10 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
             <MenuPopup isOpen={false}>
                 <ul>
                     {props.menuItems.map((item, index) => {
+                        const anchorId = `section${index + 1}`;
+
                         return <NavListItem key={index}>
-                            <NavLink href="">{item}</NavLink>
+                            <NavLink  href={`#${anchorId}`}>{item}</NavLink>
                         </NavListItem>
                     })}
                 </ul>

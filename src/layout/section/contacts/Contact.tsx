@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Button} from "../../../components/button/Button";
 import {Container} from "../../../components/Container";
 import {Theme} from "../../../styles/Theme";
+import {Button} from "../../../components/button/Button";
 
 export const Contacts = () => {
     return (
-        <StyledContacts>
+        <StyledContacts id={"section4"}>
                 <SectionTitle>Contact with me</SectionTitle>
             <Container>
                 <Call>

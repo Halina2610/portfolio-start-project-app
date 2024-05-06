@@ -15,14 +15,11 @@ const workItems = ["All", "Landing page", "React", "Tilda"]
 
 export const Works = () => {
     return (
-        <StyledWorks>
+        <StyledWorks id={"section3"}>
             <SectionTitle>My Works</SectionTitle>
             <Container>
                 <TabMenu menuItems={workItems}/>
                 <GridWrapper templateColumns={"1fr 1fr"} gap={"20px"}>
-
-
-
                         <Work title={"Clothing store"}
                               text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
                               src={Project2}
