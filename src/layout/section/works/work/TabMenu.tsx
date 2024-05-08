@@ -1,21 +1,32 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "../../../../components/link/Link";
-import {Theme} from "../../../../styles/Theme";
+import { Theme } from "../../../../styles/Theme";
+import { FilterType } from "../Works";
 
-export const TabMenu = (props: { menuItems: Array<string> }) => {
+type TabMenuProps = {
+    menuItems: FilterType[];
+    activeFilter: FilterType;
+    onFilterChange: (filter: FilterType) => void;
+};
+
+export const TabMenu: React.FC<TabMenuProps> = ({
+                                                    menuItems,
+                                                    activeFilter,
+                                                    onFilterChange,
+                                                }) => {
     return (
         <StyledMenu>
             <NavList>
-
-                {props.menuItems.map((item,index) => {
-                    return <NavListItem key={index}>
-                        <Link href="">{item}</Link>
+                {menuItems.map((item, index) => (
+                    <NavListItem
+                        key={index}
+                        isActive={item === activeFilter}
+                        onClick={() => onFilterChange(item)}
+                    >
+                        {item}
                     </NavListItem>
-                })}
-
+                ))}
             </NavList>
-
         </StyledMenu>
     );
 };
@@ -24,23 +35,32 @@ const StyledMenu = styled.nav`
   @media ${Theme.media.mobile} {
     display: none;
   }
-  ul {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    list-style: none;
-    
-  }
- 
-`
+`;
 
 const NavList = styled.ul`
-  margin: 0;
-  padding: 0;
   display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
 `;
 
-const NavListItem = styled.li`
- 
+const NavListItem = styled.li<{ isActive: boolean }>`
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  
+  color: ${(props) => (props.isActive ? Theme.colors.accent : Theme.colors.textColor)};
+  text-decoration-line: ${(props) => (props.isActive ? 'underline' : 'none')};
+  text-decoration-skip-ink: none; 
+  text-underline-offset: 4px; 
+  text-decoration-thickness: 2px;
+  
+  &:hover {
+    color: ${Theme.colors.accent};
+  }
 `;
-

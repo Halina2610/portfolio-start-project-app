@@ -7,24 +7,26 @@ import {Button} from "../../../../components/button/Button";
 
 type WorkPropsType = {
     title: string
-    text: string
-    src: string
-    hrefDemo: string
-    hrefCode: string
+    text?: string
+    img: string
+    hrefDemo?: string
+    hrefCode?: string
 }
 export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
             <ImageWrapper>
-                <Image src={props.src} alt=""/>
-            <Button>view project</Button>
+                <Image src={props.img} alt=""/>
+                <Button>
+                    <Link target="_blank" href={props.hrefDemo}>view project</Link>
+                </Button>
             </ImageWrapper>
 
             <Content>
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
-                <Link href={props.hrefDemo}>Demo</Link>
-                <Link href={props.hrefCode}>Code</Link>
+                <Link target="_blank" href={props.hrefDemo}>Demo</Link>
+                <Link target="_blank" href={props.hrefCode}>Code</Link>
             </Content>
 
 
@@ -51,12 +53,12 @@ const ImageWrapper = styled.div`
   position: relative;
   transition: 0.2s;
 
-  &:hover{
-    ${Button}{
+  &:hover {
+    ${Button} {
       opacity: 1;
-      
+
     }
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -66,17 +68,17 @@ const ImageWrapper = styled.div`
       right: 0;
       background: rgba(0 0 0 0.5);
       backdrop-filter: blur(4px);
-      
+
     }
   }
-  
+
   ${Button} {
     opacity: 0;
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
-    
+
     background-color: ${Theme.colors.accent};
     font-weight: 700;
   }
@@ -84,18 +86,18 @@ const ImageWrapper = styled.div`
 
 
 const Content = styled.div`
-    padding: 20px 20px;
-    
+  padding: 20px 20px;
+
 `
 
 const Title = styled.h4`
 `
 
 const Text = styled.p`
-  margin: 10px 0 ;
+  margin: 10px 0;
   text-align: justify;
   letter-spacing: 0.06em;
-  
+
 
 `
 
