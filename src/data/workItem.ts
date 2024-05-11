@@ -1,8 +1,11 @@
 import Project4 from "../assets/img/projects/Cards.jpg";
 import Project2 from "../assets/img/projects/project2.webp";
 import Project1 from "../assets/img/projects/project1.webp";
-import Project3 from "../assets/img/projects/Umneyka.webp";
+import Project3 from "../assets/img/projects/Umneyka.webp"
+import Project5 from "../assets/img/projects/Project5.png"
+import Market from "../assets/img/projects/Food_market.png"
 import {FilterType} from "../layout/section/works/Works";
+
 
 export type WorkItem = {
     title: string;
@@ -22,9 +25,18 @@ export const workItems: WorkItem[] = [
         category: "SPA",
     },
     {
+        title: "Food market",
+        text: "Technology stack: JavaScript, React, LocalStorage React Router, Lodash, Styled Components, Material UI",
+        img: Market,
+        hrefDemo: "https://food-market-gold.vercel.app/",
+        hrefCode: "https://github.com/Halina2610/food-market",
+        category: "SPA",
+    },
+
+    {
         title: "Todo-list",
         text: "Technology stack: ",
-        img: Project4,
+        img: Project5,
         hrefDemo: "https://halina2610.github.io/1-todolist/",
         hrefCode: "https://github.com/Halina2610/1-todolist",
         category: "SPA",
