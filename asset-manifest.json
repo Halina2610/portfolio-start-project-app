@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-start-project-app/static/css/main.31d6cfe0.css",
-    "main.js": "/portfolio-start-project-app/static/js/main.6202ca00.js",
+    "main.js": "/portfolio-start-project-app/static/js/main.9e344c16.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio-start-project-app/static/js/787.25eaef86.chunk.js",
     "static/media/Food_market.png": "/portfolio-start-project-app/static/media/Food_market.9004765ddfb08cd81164.png",
     "static/media/Umneyka.webp": "/portfolio-start-project-app/static/media/Umneyka.d7314748d59880fe1f12.webp",
@@ -12,11 +12,11 @@
     "static/media/project1.webp": "/portfolio-start-project-app/static/media/project1.92f3444641d7c7e81ed5.webp",
     "static/media/iconsSprite.svg": "/portfolio-start-project-app/static/media/iconsSprite.b02517c2c792738e96dc24944fd425c8.svg",
     "index.html": "/portfolio-start-project-app/index.html",
-    "main.6202ca00.js.map": "/portfolio-start-project-app/static/js/main.6202ca00.js.map",
+    "main.9e344c16.js.map": "/portfolio-start-project-app/static/js/main.9e344c16.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio-start-project-app/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.6202ca00.js"
+    "static/js/main.9e344c16.js"
   ]
 }
