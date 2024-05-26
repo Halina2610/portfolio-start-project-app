@@ -26,8 +26,6 @@ const StyledFooter = styled.footer`
   background-color: ${Theme.colors.primaryBg};
   box-shadow: 0 0 10px rgba(145, 168, 241, 0.39);
   bottom: 0;
-  min-height: 65px;
-  padding: 20px;
 
 
   ${GridWrapper} {

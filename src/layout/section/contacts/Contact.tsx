@@ -3,76 +3,38 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
 import {Theme} from "../../../styles/Theme";
-import {Button} from "../../../components/button/Button";
+import {SocialIconsList} from "../../../components/SocialIconsList";
 
 export const Contacts = () => {
     return (
         <StyledContacts id={"section4"}>
-                <SectionTitle>Contact with me</SectionTitle>
+            <SectionTitle>Contact with me</SectionTitle>
             <Container>
                 <Call>
-                    Please fill out the form on this section to contact with me or <a href={"vievamaxa@gmail.com"}>send me an email</a>. I will answer you as soon as I receive your message.
+                    Please fill out the form on this section to contact with me or <a
+                    href={"mailto:vievamaxa@gmail.com"}>send me an email</a>. I will answer you as soon as I receive
+                    your message.
+                    <SocialIconsList/>
                 </Call>
-                    <StyledForm>
-                        <Field placeholder={"Name"}></Field>
-                        <Field placeholder={"Email"}></Field>
-                        <Field as={"textarea"} placeholder={"Enter message..."}></Field>
-                        <Button type={"submit"}>Send message</Button>
-                    </StyledForm>
-                </Container>
-
+            </Container>
         </StyledContacts>
     );
 };
 
 const StyledContacts = styled.section`
-
-`
-
-const StyledForm = styled.form`
-  max-width: 580px;
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin: 0 auto;
-  
-  textarea {
-    resize: none;
-  } 
-  
-  ${Button} {
-    margin: 0 auto;
-  }
-`
-
-const Field = styled.input`
-  width: 100%;
-  padding: 10px;
-  font-family: "poppins", sans-serif;
-  background-color: ${Theme.colors.secondaryBg};
-  border: 2px solid ${Theme.colors.primaryBg};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  
-  &::placeholder {
-    font-family: "poppins", sans-serif;
-  }
-
-  &:nth-child(3) {
-    height: 70px;
-  }
-`
+`;
 
 const Call = styled.p`
   max-width: 580px;
-    text-align: center;
-    margin: 20px auto;
-   a {
-     color: ${Theme.colors.accent};
-     font-weight: 700;
-     &:hover {
-       border-bottom: 2px solid ${Theme.colors.accent};
-     }
-   }
-`
+  text-align: center;
+  margin: 20px auto;
+
+  a {
+    color: ${Theme.colors.accent};
+    font-weight: 700;
+
+    &:hover {
+      border-bottom: 2px solid ${Theme.colors.accent};
+    }
+  }
+`;
